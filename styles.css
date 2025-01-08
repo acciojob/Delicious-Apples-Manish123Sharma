@@ -1,1 +1,125 @@
 /* your code here */
+body{
+	background-color: lightgreen;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.product__photo{
+	width: 45%;
+	height: auto;
+	position: relative;
+	top: 20px;
+	bottom: -20px;
+	left: -20px;
+}
+.photo-main{
+	background-color: lime;
+	height: 75%;
+	border-radius: 10px 10px 0 0;
+	padding: 5px;
+}
+.controls{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.controls i:nth-child(1){
+	color: white;
+	text-align: right;
+	padding-left: 15px;
+}
+.controls i:nth-child(2){
+	color: white;
+	text-align: end;
+	padding-right: 15px;
+}
+.photo-container{
+	height: auto;
+	width: 100%;
+	border-radius: 10px;
+	border: transparent;
+	box-shadow: 0px 5px rgb(0,0,0,0.2);
+}
+.photo-main img{
+	align-items: start;
+	position: relative;
+	left: -50px;
+	height: 100%;
+	width: 120%;
+	object-fit: fit;
+}
+.photo-album{
+	background-color: white;
+	overflow-x: auto;
+	white-space: nowrap;
+	border-radius: 0 0 10px 10px;
+}
+.photo-album ul, .variant ul{
+	display: flex;
+	list-style: none;
+	gap: 5px;
+	padding: 0px;
+	margin: 5px;
+	text-align: center;
+}
+.photo-album li, .variant li{
+	border: 0.5px solid lightgray;
+	margin: 2px;
+	flex: 0 0 auto;
+	text-align: center;
+}
+.photo-album li img, .variant li img{
+	width: 35px;
+	height: auto;
+	object-fit: cover;
+	text-align: center;
+}
+.product{
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 450px;
+	border-radius: 5px;
+	justify-content: space-around;
+}
+.product__info{
+	width: 50%;
+	height: auto;
+	margin-top: 5px;
+}
+.title{
+	padding: 2px;
+	margin: 0px;
+	line-height: 0.2;
+}
+.title span{
+	color: gray;
+	font-size: 15px;
+}
+h1, h4, h5{
+	color: gray;
+}
+.price span:nth-child(2){
+	font-size: 35px;
+}
+.price span:nth-child(1){
+	padding-right: 10px;
+}
+.price{
+	margin-top: 10px;
+	margin-top: 15px;
+	color: red;
+	align-content: center;
+}
+.variant{
+	line-height: 0;
+}
+button{
+	background-color: red;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+}
